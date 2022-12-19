@@ -1,24 +1,23 @@
-//(6)b6-jsx-multi-jsx
 function App() {
   return (
     <div>
-      <Person />
-      <Person />
-      <Person />
-      <Person />
-      <Person />
-      <Person />
-      <Person />
+      <Person name="Sudesh" />
+      <Person name="Rohit" />
+      <Person name="Amit" />
+      <Person name="Baban" />
+      <Person name="Kiran" />
+      <Person name="Shubham" />
+      <Person name="Prasad" />
     </div>
   );
 }
 
 // <Person />
-function Person() {
+function Person({ name }) {
   return (
     <div>
       <img src="https://picsum.photos/400" alt="" />
-      <h1>Person Name </h1>
+      <h1>Person Name : {name} </h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
         delectus placeat? Consequuntur iusto perferendis voluptatibus, ipsa sit
